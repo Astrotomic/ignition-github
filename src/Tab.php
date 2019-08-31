@@ -20,4 +20,11 @@ class Tab extends BaseTab
     {
         $this->script($this->component(), __DIR__.'/../dist/js/tab.js');
     }
+
+    public function meta(): array
+    {
+        return [
+            'config' => json_decode(file_get_contents(__DIR__.'/../github.json')),
+        ];
+    }
 }
