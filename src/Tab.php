@@ -1,6 +1,6 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tab_name;
+namespace Astrotomic\IgnitionGithubTab;
 
 use Facade\Ignition\Tabs\Tab as BaseTab;
 
@@ -8,23 +8,16 @@ class Tab extends BaseTab
 {
     public function name(): string
     {
-        return ':tab_name';
+        return 'GitHub';
     }
 
     public function component(): string
     {
-        return ':package_name';
+        return 'ignition-github';
     }
 
-    public function registerAssets()
+    public function registerAssets(): void
     {
-        $this->script(':package_name', __DIR__.'/../dist/js/tab.js');
-    }
-
-    public function meta(): array
-    {
-        return [
-            'title' => $this->name(),
-        ];
+        $this->script($this->component(), __DIR__.'/../dist/js/tab.js');
     }
 }

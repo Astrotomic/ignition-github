@@ -1,14 +1,12 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tab_name\Tests;
+namespace Astrotomic\IgnitionGithubTab\Tests;
 
-use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
-use :namespace_vendor\:namespace_tab_name\TabServiceProvider;
+use Astrotomic\IgnitionGithubTab\TabServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
-
     protected function getPackageProviders($app)
     {
         return [
