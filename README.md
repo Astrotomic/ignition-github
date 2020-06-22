@@ -1,5 +1,3 @@
-
-
 # Laravel Ignition GitHub Tab
 
 ## Installation
@@ -37,6 +35,7 @@ If you discover any security related issues, please check [SECURITY](https://git
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
 ## Treeware
 
 You're free to use this package, but if it makes it to your production environment I would highly appreciate you buying the world a tree.
